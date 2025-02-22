@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/mainFragment"
+        android:icon="@drawable/ic_home"
+        android:title="Home"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/intentsFragment"
+        android:icon="@drawable/ic_intents"
+        android:title="Intents" />
+
+    <item
+        android:id="@+id/serviceFragment"
+        android:icon="@drawable/ic_service"
+        android:title="Service" />
+
+    <item
+        android:id="@+id/broadcastFragment"
+        android:icon="@drawable/ic_broadcast"
+        android:title="Broadcast" />
+
+    <item
+        android:id="@+id/contentFragment"
+        android:icon="@drawable/ic_content"
+        android:title="Content" />
+</menu>

@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">My Application</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_intents">Intents</string>
+    <string name="title_service">Service</string>
+    <string name="title_broadcast">Broadcast</string>
+    <string name="title_content">Content</string>
+    <string name="facebook_app_id">1522302725117996</string>
+
+
 </resources>

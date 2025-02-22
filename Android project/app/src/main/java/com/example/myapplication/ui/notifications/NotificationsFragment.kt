@@ -10,29 +10,20 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.R
+import com.example.myapplication.databinding.FragmentContentBinding
 import com.example.myapplication.databinding.FragmentNotificationsBinding
 import com.example.myapplication.ui.adapters.ItemAdapter
 
 class NotificationsFragment : Fragment() {
 
-    private var _binding: FragmentNotificationsBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
+    private var _binding: FragmentContentBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        val view = inflater.inflate(R.layout.fragment_notifications, container, false)
-
-        val recyclerView: RecyclerView = view.findViewById(R.id.recycler_notifications)
-        recyclerView.layoutManager = LinearLayoutManager(requireContext())
-        recyclerView.adapter = ItemAdapter(List(20) { "Notification Item ${it + 1}" })
-
-        return view
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
+    ): View {
+        _binding = FragmentContentBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
     override fun onDestroyView() {

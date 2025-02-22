@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lab1</string>
+    <string name="title_intents">Intents</string>
+    <string name="title_service">Service</string>
+    <string name="title_broadcast">Broadcast</string>
+    <string name="title_content">Content</string>
+</resources>

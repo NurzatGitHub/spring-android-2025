@@ -52,6 +52,7 @@ dependencies {
     val nav_version = "2.8.6"
     implementation ("androidx.navigation:navigation-fragment:$nav_version")
     implementation ("androidx.navigation:navigation-ui:$nav_version")
+    implementation("com.facebook.android:facebook-android-sdk:18.0.2")
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
