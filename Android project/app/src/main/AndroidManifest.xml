@@ -40,7 +40,16 @@
             android:foregroundServiceType="mediaPlayback"
             android:exported="false"/>
 
+        <receiver
+            android:name=".broadcast.AirplaneModeReceiver"
+            android:exported="false">  <!-- ✅ Добавлено exported -->
+            <intent-filter>
+                <action android:name="android.intent.action.AIRPLANE_MODE"/>
+            </intent-filter>
+        </receiver>
+
     </application>
+
     <queries>
         <package android:name="com.instagram.android" />
     </queries>

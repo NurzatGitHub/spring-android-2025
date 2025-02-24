@@ -53,6 +53,7 @@ dependencies {
     implementation ("androidx.navigation:navigation-fragment:$nav_version")
     implementation ("androidx.navigation:navigation-ui:$nav_version")
     implementation("com.facebook.android:facebook-android-sdk:18.0.2")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
